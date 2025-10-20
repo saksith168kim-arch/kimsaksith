@@ -1,0 +1,166 @@
+:root {
+  :root {
+  --main-font: 'KHMMOOL';
+}
+
+samp {
+  font-family: var(--main-font), monospace;
+}
+
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --color-red-400: oklch(70.4% .191 22.216);
+  --color-red-500: oklch(63.7% .237 25.331);
+  --color-red-600: oklch(57.7% .245 27.325);
+  --color-red-700: oklch(50.5% .213 27.518);
+  --color-amber-400: oklch(82.8% .189 84.429);
+  --color-green-950: oklch(26.6% .065 152.934);
+  --color-blue-600: oklch(54.6% .245 262.881);
+  --color-blue-700: oklch(48.8% .243 264.376);
+  --color-purple-500: oklch(62.7% .265 303.9);
+  --color-pink-100: oklch(94.8% .028 342.258);
+  --color-pink-500: oklch(65.6% .241 354.308);
+  --color-gray-500: oklch(55.1% .027 264.364);
+  --color-gray-600: oklch(44.6% .03 256.802);
+  --color-gray-700: oklch(37.3% .034 259.733);
+  --color-gray-900: oklch(21% .034 264.665);
+  --color-black: #000;
+  --color-white: #fff;
+  --spacing: .25rem;
+  --container-sm: 24rem;
+  --container-md: 28rem;
+  --container-2xl: 42rem;
+  --container-3xl: 48rem;
+  --container-4xl: 56rem;
+  --container-5xl: 64rem;
+  --container-7xl: 80rem;
+  --text-xs: .75rem;
+  --text-xs--line-height: 1.33333;
+  --text-sm: .875rem;
+  --text-sm--line-height: 1.42857;
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 1.55556;
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 1.4;
+  --text-2xl: 1.5rem;
+  --text-2xl--line-height: 1.33333;
+  --text-3xl: 1.875rem;
+  --text-3xl--line-height: 1.2;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --tracking-widest: .1em;
+  --leading-relaxed: 1.625;
+  --radius-sm: .25rem;
+  --radius-md: .375rem;
+  --ease-out: cubic-bezier(0,0,.2,1);
+  --ease-in-out: cubic-bezier(.4,0,.2,1);
+  --default-transition-duration: .15s;
+  --default-transition-timing-function: cubic-bezier(.4,0,.2,1);
+  --default-font-family: var(--font-sans);
+  --default-mono-font-family: var(--font-mono);
+  border: 0 solid;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  font-family: var(--default-font-family);
+  line-height: 1.5;
+  tab-size: 4;
+  -webkit-tap-highlight-color: transparent;
+
+  /* SweetAlert2 Theme */
+  --swal2-outline: 0 0 0 3px rgba(100, 150, 200, 0.5);
+  --swal2-container-padding: 0.625em;
+  --swal2-backdrop: rgba(0, 0, 0, 0.4);
+  --swal2-backdrop-transition: background-color 0.1s;
+  --swal2-width: 32em;
+  --swal2-padding: 0 0 1.25em;
+  --swal2-border: none;
+  --swal2-border-radius: 0.3125rem;
+  --swal2-background: white;
+  --swal2-color: #545454;
+  --swal2-show-animation: swal2-show 0.3s;
+  --swal2-hide-animation: swal2-hide 0.15s forwards;
+  --swal2-icon-zoom: 1;
+  --swal2-icon-animations: true;
+  --swal2-title-padding: 0.8em 1em 0;
+  --swal2-html-container-padding: 1em 1.6em 0.3em;
+  --swal2-input-border: 1px solid #d9d9d9;
+  --swal2-input-border-radius: 0.1875em;
+  --swal2-input-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06), 0 0 0 3px transparent;
+  --swal2-input-background: transparent;
+  --swal2-input-transition: border-color 0.2s, box-shadow 0.2s;
+  --swal2-input-hover-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06), 0 0 0 3px transparent;
+  --swal2-input-focus-border: 1px solid #b4dbed;
+  --swal2-input-focus-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.06), 0 0 0 3px rgba(100, 150, 200, 0.5);
+  --swal2-progress-step-background: #add8e6;
+  --swal2-validation-message-background: #f0f0f0;
+  --swal2-validation-message-color: #666;
+  --swal2-footer-border-color: #eee;
+  --swal2-footer-background: transparent;
+  --swal2-footer-color: inherit;
+  --swal2-timer-progress-bar-background: rgba(0, 0, 0, 0.3);
+  --swal2-close-button-font-size: 2.5em;
+  --swal2-close-button-color: #ccc;
+  --swal2-close-button-transition: color 0.2s, box-shadow 0.2s;
+  --swal2-actions-justify-content: center;
+  --swal2-actions-margin: 1.25em auto 0;
+  --swal2-action-button-hover: rgba(0, 0, 0, 0.1);
+  --swal2-action-button-active: rgba(0, 0, 0, 0.1);
+  --swal2-confirm-button-background-color: #7066e0;
+  --swal2-confirm-button-color: #fff;
+  --swal2-deny-button-background-color: #dc3741;
+  --swal2-deny-button-color: #fff;
+  --swal2-cancel-button-background-color: #6e7881;
+  --swal2-cancel-button-color: #fff;
+  --swal2-toast-show-animation: swal2-toast-show 0.5s;
+  --swal2-toast-hide-animation: swal2-toast-hide 0.1s forwards;
+  --swal2-toast-box-shadow: 0 0 1px hsl(0deg 0% 0% / 0.075), 0 1px 2px hsl(0deg 0% 0% / 0.075), 1px 2px 4px hsl(0deg 0% 0% / 0.075), 1px 3px 8px hsl(0deg 0% 0% / 0.075), 2px 4px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+/* Basic page styling */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-gray-900);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+button {
+  background-color: var(--color-blue-600);
+  color: var(--color-white);
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: var(--text-lg);
+  cursor: pointer;
+  transition: background-color 0.3s var(--ease-in-out);
+}
+
+button:hover {
+  background-color: var(--color-blue-700);
+}
+@font-face {
+  font-family: 'Moolsba';
+  src: url('~assets/fonts/MOOLSBA.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.ft-moul {
+  font-family: 'Moul', serif;
+}
+@font-face {
+  font-family: 'Moolsba';
+  src: url('/fonts/MOOLSBA.TTF') format('truetype');
+}
+.ft-moul {
+  font-family: 'Moolsba', serif;
+}
+.bg-second-cl[data-v-803c0840] {
+    background-color: #656d4a;
+}

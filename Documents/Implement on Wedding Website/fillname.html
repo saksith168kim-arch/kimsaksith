@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>បំពេញឈ្មោះអញ្ជើញ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro&family=Moulpali&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-b from-pink-50 to-white flex items-center justify-center min-h-screen font-[Kantumruy]">
+
+  <div class="bg-white shadow-lg rounded-2xl p-8 w-full max-w-sm text-center border border-pink-100">
+    <h1 class="text-2xl font-bold text-pink-600 mb-6 font-[Moulpali]">
+      សូមបំពេញឈ្មោះរបស់អ្នក
+    </h1>
+    
+    <form id="nameForm" class="flex flex-col items-center space-y-4">
+      <input
+        id="guestName"
+        type="text"
+        placeholder="ឧ. កញ្ញា គិម ធិញធិញ"
+        class="border border-gray-300 rounded-lg p-3 w-full focus:ring-2 focus:ring-pink-400 outline-none text-center text-lg"
+        required
+      />
+      
+      <button
+        type="submit"
+        class="bg-pink-500 hover:bg-pink-600 text-white rounded-lg px-6 py-3 font-semibold transition text-lg"
+      >
+        មើលលិខិតអញ្ជើញ
+      </button>
+    </form>
+  </div>
+
+  <script>
+document.getElementById('nameForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const name = document.getElementById('guestName').value.trim();
+  if (!name) return alert("សូមបំពេញឈ្មោះរបស់អ្នក!");
+
+  const webhook = "https://script.google.com/macros/s/AKfycbyEwRdJ2_EVZObd5bXS886G5X7bfdpS0KNl31KqrZTCuxRXnwnhLEPxbhQygjLlmdevAw/exec";
+
+  try {
+    const response = await fetch(webhook, {
+      method: "POST",
+      body: JSON.stringify({ name }),
+      headers: { "Content-Type": "application/json" }
+    });
+
+    const text = await response.text();
+    console.log("Webhook response:", text);
+
+    if (text.includes("Success")) {
+      // Redirect to invitation page with name
+      window.location.href = `index.html?name=${encodeURIComponent(name)}`;
+    } else {
+      alert("មានបញ្ហា! មិនអាចផ្ញើឈ្មោះបានទេ។ សូមសាកល្បងម្ដងទៀត។");
+    }
+  } catch (err) {
+    console.error("Error sending data:", err);
+    alert("មានបញ្ហាក្នុងការតភ្ជាប់ទៅ server។");
+  }
+});
+  </script>
+
+</body>
+</html>
