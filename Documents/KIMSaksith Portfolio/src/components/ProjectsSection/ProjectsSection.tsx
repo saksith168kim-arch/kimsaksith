@@ -7,7 +7,7 @@ export const ProjectsSection = () => {
       title: "ATM/CRM EMV Contactless Transaction",
       description: "Delivered on-us and off-us contactless transaction support across Visa, Mastercard, and UPI card schemes on ABA Bank's terminal network.",
       // Image showing a user interacting with an ATM terminal / card reader
-      image: "https://i.postimg.cc/NGC91vVr/Gemini-Generated-Image-awkgclawkgclawkg.jpg",
+      image: "/images/projects/emv-contactless.jpg",
       tags: ["Visa", "Mastercard", "UPI"],
     },
     {
@@ -15,7 +15,7 @@ export const ProjectsSection = () => {
       title: "Numberless Card Project",
       description: "Enabled numberless card transactions across Visa, Mastercard, UPI, and CSS, adapting terminal workflows to support enhanced card security.",
       // Image showing a sleek, modern minimalist card concept
-      image: "https://i.postimg.cc/V6pSPjXD/Gemini-Generated-Image-cvzg4lcvzg4lcvzg.jpg",
+      image: "/images/projects/numberless-card.jpg",
       tags: ["Card Security", "Workflow Design"],
     },
     {
@@ -23,7 +23,7 @@ export const ProjectsSection = () => {
       title: "Non-Magstripe Card Support",
       description: "Implemented ATM/CRM support for non-magstripe cards, testing and validating terminal read compatibility ahead of rollout.",
       // Close-up image highlighting microchips and secure card hardware
-      image: "https://i.postimg.cc/Y07HF07q/Gemini-Generated-Image-20s8r920s8r920s8.jpg",
+      image: "/images/projects/non-magstripe.jpg",
       tags: ["UAT", "Terminal Hardware"],
     },
     {
@@ -31,11 +31,10 @@ export const ProjectsSection = () => {
       title: "Member Bank Integration",
       description: "Added CSS as a supported member bank scheme, integrating transaction flows into the existing ATM/CRM terminal network.",
       // Image representing secure banking, currency, and financial network connection
-      image: "https://i.postimg.cc/P590ZJbM/Gemini-Generated-Image-k7c32fk7c32fk7c3.jpg",
+      image: "/images/projects/member-bank-integration.jpg",
       tags: ["CSS", "Card Scheme Integration"],
     },
   ];
-
   return (
     <section id="projects" className="w-full max-w-7xl mx-auto px-6 py-24">
       <motion.div

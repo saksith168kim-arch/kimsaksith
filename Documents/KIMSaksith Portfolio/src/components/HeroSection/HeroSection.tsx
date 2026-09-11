@@ -144,14 +144,14 @@ Self-Service Banking Integration · Workflow Design · UAT Testing · Operations
 
                 {/* Profile Photo with Dual Glowing Ring */}
                 <div className="mt-1 relative w-28 h-28 rounded-full p-1 bg-gradient-to-tr from-cyan-400 via-primary to-purple-400 backdrop-blur-md shadow-2xl border border-white/50 overflow-hidden group">
-                  <img 
-                    src="https://i.postimg.cc/9Xn4hf8J/photo-2026-08-05-11-44-03.jpg" 
-                    alt="KIM Saksith" 
-                    className="w-full h-full object-cover rounded-full filter contrast-105"
-                    loading="eager"
-                  />
-                  <div className="absolute bottom-1 right-2 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white shadow-md" />
-                </div>
+  <img 
+    src="/images/profile.jpg" 
+    alt="KIM Saksith" 
+    className="w-full h-full object-cover rounded-full filter contrast-105"
+    loading="eager"
+  />
+  <div className="absolute bottom-1 right-2 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white shadow-md" />
+</div>
               </div>
 
               {/* Card Body */}
