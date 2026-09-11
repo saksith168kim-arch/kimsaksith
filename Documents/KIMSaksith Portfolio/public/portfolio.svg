@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="48" height="48">
+  <defs>
+    <!-- Gradient for the main briefcase body -->
+    <linearGradient id="bodyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF9800" />
+      <stop offset="65%" stop-color="#F57C00" />
+      <stop offset="100%" stop-color="#E65100" />
+    </linearGradient>
+
+    <!-- Gradient for the lower flap overlay -->
+    <linearGradient id="flapGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFB300" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#E65100" stop-opacity="0.35" />
+    </linearGradient>
+  </defs>
+
+  <!-- Briefcase Handle (Moved up to fit larger scale) -->
+  <path d="M192 112h128v36c0 10-8 18-18 18h-92c-10 0-18-8-18-18v-36z" fill="#E65100" />
+
+  <!-- Briefcase Main Body (Expanded to fill viewbox) -->
+  <rect x="48" y="136" width="416" height="300" rx="40" ry="40" fill="url(#bodyGradient)" />
+
+  <!-- Briefcase Center Flap / Horizon line -->
+  <path d="M48 240h416v156c0 22-18 40-40 40H88c-22 0-40-18-40-40V240z" fill="url(#flapGradient)" />
+  
+  <!-- Subtle dividing line across the middle -->
+  <line x1="48" y1="240" x2="464" y2="240" stroke="#E65100" stroke-opacity="0.4" stroke-width="4" />
+
+  <!-- User / Profile Icon Inside Briefcase (Scaled up) -->
+  <g fill="#FFFDE7" opacity="0.95">
+    <!-- Head -->
+    <circle cx="256" cy="256" r="44" />
+    <!-- Shoulders / Body -->
+    <path d="M256 312c-48 0-88 26-88 58 0 4 3.5 8 8 8h160 c4.5 0 8-4 8-8 0-32-40-58-88-58z" />
+  </g>
+</svg>
