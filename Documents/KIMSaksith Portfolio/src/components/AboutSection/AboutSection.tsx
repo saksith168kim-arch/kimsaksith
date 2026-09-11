@@ -22,10 +22,7 @@ export const AboutSection = () => {
               Passionate about <span className="text-gradient-primary">Terminal Product Development</span>
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I am a seasoned Full-Stack Developer and UI/UX Designer with over 10 years of experience 
-              delivering high-quality software solutions for global enterprises and startups. My career 
-              blends deep technical expertise with leadership skills, enabling me to design, build, and 
-              lead innovative digital products from concept to launch.
+              I'm a Senior Terminal Product Development Officer with 6+ years of experience at ABA Bank, managing and supporting self-service machines, handling ATM/CRM disputes, and resolving technical issues. I've contributed to new projects, optimized workflows, and worked on system configurations and bug fixes in close collaboration with vendors.
             </p>
           </div>
         </div>
